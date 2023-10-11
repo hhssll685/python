@@ -20,29 +20,25 @@ max 또는 min을 입력 받아 최대,최소값을 찾아 들려주는 함수.
     5)돌려 받은 최대값 또는 최소값을 출력한다.
 """
 import random as r
-
-
 def getMinMax(list, input):
-    if input == "max":
-        max_num = list[0]
+    if input == "Max":
+        maxnum = list[0]
         for i in list:
-            if i > max_num:
-                max_num = i
-        return max_num
-    elif input == "min":
-        min_num = list[0]
+            if i > maxnum:
+                maxnum = i
+        return maxnum
+    elif input == "Min":
+        minnum = list[0]
         for i in list:
-            if i < min_num:
-                min_num = i
-        return min_num
+            if i < minnum:
+                minnum = i
+        return minnum
     else:
         print("illegal input")
-    print()
-
 
 while True:
-    mList = [r.randint(1, 100) for i in range(10)]
+    maxminList = [r.randint(1, 100) for i in range(10)]
     while True:
-        print(mList)
-        mInput = input("max 또는 min을 입력하여 목록을 정렬합니다:")
-        print(getMinMax(mList, mInput))
+        print(maxminList)
+        maxminInput = input("Max 또는 Min을 입력하여 목록을 정렬합니다:")
+        print(getMinMax(maxminList, maxminInput))
