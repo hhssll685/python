@@ -40,5 +40,5 @@ while True:
     maxminList = [r.randint(1, 100) for i in range(10)]
     while True:
         print(maxminList)
-        maxminInput = input("Max 또는 Min을 입력하여 목록을 정렬합니다:")
+        maxminInput = input("Max 또는 Min을 입력:")
         print(getMinMax(maxminList, maxminInput))
